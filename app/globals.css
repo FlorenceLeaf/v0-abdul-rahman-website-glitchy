@@ -3,41 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
 
-  --card: 0 0% 3%;
-  --card-foreground: 0 0% 100%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
 
-  --popover: 0 0% 3%;
-  --popover-foreground: 0 0% 100%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
 
-  --primary: 180 100% 50%;
-  --primary-foreground: 0 0% 0%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
 
-  --secondary: 330 100% 50%;
-  --secondary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
 
-  --muted: 0 0% 10%;
-  --muted-foreground: 0 0% 70%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
 
-  --accent: 270 100% 50%;
-  --accent-foreground: 0 0% 100%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
 
-  --destructive: 0 100% 50%;
-  --destructive-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
 
-  --border: 180 100% 50%;
-  --input: 180 100% 50%;
-  --ring: 180 100% 50%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
 
   --radius: 0.5rem;
 
-  --chart-1: 180 100% 50%;
-  --chart-2: 330 100% 50%;
-  --chart-3: 270 100% 50%;
-  --chart-4: 60 100% 50%;
-  --chart-5: 0 0% 70%;
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
 }
 
 @layer utilities {
@@ -47,48 +47,12 @@
 }
 
 @layer base {
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 }
 
@@ -135,22 +99,22 @@
   z-index: 10;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar for professional look */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.3);
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #00ffff, #ff00ff);
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #00dddd, #dd00dd);
+  background: #94a3b8;
 }
 
 /* Enhanced text effects for text-only cyberpunk theme */
@@ -174,7 +138,6 @@ h3 {
 
 /* Terminal-style text for body */
 body {
-  font-family: "Courier New", monospace;
   letter-spacing: 0.5px;
 }
 
@@ -188,9 +151,25 @@ code {
   font-family: "Courier New", monospace;
 }
 
-/* Text selection color */
+/* Text selection styling */
 ::selection {
-  background: rgba(255, 0, 255, 0.3);
-  color: #ffffff;
-  text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+  background: rgba(59, 130, 246, 0.1);
+  color: inherit;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for interactive elements */
+button,
+a,
+input,
+textarea {
+  transition: all 0.2s ease-in-out;
 }

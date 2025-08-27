@@ -15,7 +15,7 @@ Greetings My name is Abdul Rahman
 
 I have hands-on experience in Python programming and software development, with a strong foundation in scripting, application design, and problem-solving. One of my key projects includes building a text-based mini-game, designed similar to a graphic novel, where players navigate through multiple story endings based on their choices. This project strengthened my skills in logic development and user experience design.
 
-In addition to software, I have experience in AutoCAD for technical drafting and basic design work, expanding my ability to visualize and create structural layouts.
+In addition to software, I have experience in AutoCAD, Krita, Canva and Figma for technical drafting and basic design work, expanding my ability to visualize and create structural layouts.
 
 I have practical experience with virtualization — setting up multiple Virtual Machines (VMs), installing and configuring operating systems (Windows), creating user accounts, setting up directories, and handling basic system administration tasks.
 
